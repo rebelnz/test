@@ -69,24 +69,24 @@ source .env
 
 Scripts to start and stop dependent services such as postgres database.
 
-### Start services
-
-```bash
-./dev-bin/start-services
-```
-
-### Stop services
-
-```bash
-./dev-bin/stop-services
-```
-
 ## Development
 
 ### Install Go package dependencies
 
 ```bash
 glide install
+```
+
+### Start services
+
+```bash
+./dev-bin/start-services
+```
+
+To stop services:
+
+```bash
+./dev-bin/stop-services
 ```
 
 ### Build / Run
