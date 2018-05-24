@@ -65,10 +65,6 @@ cp .env.example .env
 source .env
 ```
 
-## Services
-
-Scripts to start and stop dependent services such as postgres database.
-
 ## Development
 
 ### Install Go package dependencies
@@ -78,6 +74,8 @@ glide install
 ```
 
 ### Start services
+
+Scripts to start and stop dependent services such as postgres database.
 
 ```bash
 ./dev-bin/start-services
@@ -91,12 +89,16 @@ To stop services:
 
 ### Build / Run
 
+NOTE: Services must be running
+
 ```bash
 ./dev-bin/build
 test-api
 ```
 
 ### Test
+
+NOTE: Services must be running
 
 ```bash
 ./dev-bin/test
