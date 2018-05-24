@@ -60,18 +60,6 @@ if [ -f ".env" ]; then
     source .env
 fi
 
-# go present?
-FOUND_GO=$(which go)
-if ! [ -z "$FOUND_GO" ]; then
-    # go version
-    REQUIRED_VERSION=1.9.2
-    VERSION=$(go version)
-    if [[ "$VERSION" != *"${REQUIRED_VERSION}"* ]]; then
-        echo "(environment) Go version ${REQUIRED_VERSION} is required, please check your Go version and try again"
-        exit 1
-    fi
-fi
-
 # verify environment
 verify_env
 
